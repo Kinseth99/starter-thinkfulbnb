@@ -1,4 +1,4 @@
-/* -------  General Styles ------- */
+/*   General Styles  */
 
 body {
   font-family: "Lato", sans-serif;
@@ -37,7 +37,7 @@ section.alternate-background {
   max-height: 100%;
 }
 
-/* ---  Groups & Items --- */
+/*   Groups & Items  */
 
 .group {
   display: flex;
@@ -53,7 +53,7 @@ section.alternate-background {
   flex: 2;
 }
 
-/* -------  Navigation ------- */
+/*   Navigation  */
 
 header {
   background-color: #ff385c;
@@ -88,7 +88,7 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 
-/* -------  Search Form ------- */
+/*   Search Form  */
 form {
   border: 2px solid #ff385c;
   padding: 20px;
@@ -121,13 +121,13 @@ form button {
 }
 
 
-/* ------- About ------- */
+/*  About  */
 #about img {
   padding: 20px 0;
 }
 
 
-/* -------  Footer ------- */
+/*   Footer  */
 
 footer {
   background-color: #ff385c;
@@ -138,7 +138,7 @@ footer p {
   text-align: center;
   padding: 20px;
 }
-/* -------  Media Query ------- */
+/*   Media Query  */
 @media all and (min-width: 480px) {
   .group {
       flex-direction: row;
@@ -148,7 +148,7 @@ footer p {
   }
 }
 
-/*   Media Query - 480px is too small to work for everything without cutting off the header*/
+/*   Media Query - 480px is too small to work for everything without cutting off the header */
 @media all and (min-width: 800px) {
   header {
     display: flex;
