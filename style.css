@@ -2,6 +2,13 @@
 
 body {
   font-family: "Lato", sans-serif;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    overflow-x: hidden;
+
+}
 }
 
 h2 {
@@ -36,6 +43,10 @@ section.alternate-background {
   max-width: 100%;
   max-height: 100%;
 }
+#ideas .invis-mobile {
+  display: none;
+}
+
 
 /*   Groups & Items  */
 
@@ -59,6 +70,7 @@ header {
   background-color: #ff385c;
   padding: 20px 20px 0 20px;
   text-align: center;
+  
 }
 
 .logo {
@@ -71,6 +83,8 @@ header nav ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-content: center;
+  height: 50px;
 }
 
 header nav ul li {
@@ -140,23 +154,24 @@ footer p {
 }
 /*   Media Query  */
 @media all and (min-width: 480px) {
+
+  .body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    overflow-x: hidden;
+  }
   .group {
       flex-direction: row;
   }
-  header {
-      padding: 0;
-  }
-}
-
-/*   Media Query - 480px is too small to work for everything without cutting off the header */
-@media all and (min-width: 800px) {
   header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
   .logo {
-    font-size: 30px;
+    font-size: 50px;
   }
 
   header nav ul li {
@@ -164,6 +179,31 @@ footer p {
   }
 
   /* stay */
+  form {
+    border: 2px solid #ff385c;
+    padding-right: 20px;
+    padding-left:20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-right: 0%;
+    margin-left: 0%;
+    
+  }
+  form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+  }
+  form label {
+    display: flex;
+flex-direction: column;
+    margin-top: 20%;
+    margin-left: 0px;
+    
+  } 
+  
  #stay form {
    display: flex;
    flex-wrap: wrap;
@@ -206,8 +246,9 @@ footer p {
   }
 
   #ideas img {
-    width: 350px;
-    padding: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
   }
 
   #ideas .forests {
