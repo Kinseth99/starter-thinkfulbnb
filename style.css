@@ -99,7 +99,7 @@ header nav ul li a:hover {
 /* -------  Search Form ------- */
 form {
   border: 2px solid #ff385c;
-  padding: 10px;
+  padding: 16px;
 }
 
 form div {
@@ -178,10 +178,28 @@ footer p {
     padding: 11px;
   }
 
+  #ideas {
+    margin: 5px;
+  }
+  #ideas .invis-desktop {
+    display: none;
+  }
+
+ #ideas .desktop .invis-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+    padding: 30px;
+  }
+
+
+  
+
   main section div {
   display: flex;
   justify-content: center;
   align-items: center;
   }
-
 }
